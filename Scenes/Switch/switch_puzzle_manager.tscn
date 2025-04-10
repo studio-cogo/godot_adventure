@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8hhnmvsgruh1"]
+
+[ext_resource type="Script" path="res://Scenes/Switch/switch_puzzle_manager.gd" id="1_wtqa6"]
+[ext_resource type="AudioStream" uid="uid://bkdckw84bfuj1" path="res://Ninja Adventure - Asset Pack/Sounds/Game/Secret1.wav" id="2_volcd"]
+
+[node name="SwitchPuzzleManager" type="Marker2D"]
+position = Vector2(361, 251)
+gizmo_extents = 30.0
+script = ExtResource("1_wtqa6")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_volcd")
+volume_db = -10.0
